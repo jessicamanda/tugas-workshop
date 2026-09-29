@@ -1,12 +1,346 @@
+/* Global */
 body {
-  font-family: system-ui, sans-serif;
-  max-width: 640px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.6;
-  color: hsl(0, 0%, 13%);
+  overflow-x: clip;
 }
 
-h1 {
-  color: #2c5f2d;
+/* Navbar */
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.navbar .navbar-collapse {
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Hero Section */
+#hero {
+  margin-top: 10px;
+  padding: 40px 0 80px;
+}
+
+#hero .row .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#hero .detail .col-3 {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 520px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.name {
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1;
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.name strong {
+  font-weight: 700;
+}
+
+.name span {
+  font-weight: 900;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.desc {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#hero p {
+  text-align: end;
+}
+
+#hero .card {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#hero .card i {
+  font-size: 40px;
+  color: black;
+}
+
+#hero .github-card {
+  background-color: #000;
+}
+
+#hero .github-card i {
+  color: #fff;
+}
+
+/* Skills Section */
+#skills h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#skills .card {
+  width: min(100%, 200px);
+  height: 200px;
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#skills .card:hover {
+  transform: translateY(-6px);
+  background-color: #f5f5f5;
+}
+
+.skill-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Experience Section */
+#experience {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0 60px;
+}
+
+#experience h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#experience .experience-card {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 30px 24px;
+  margin: 0 auto 30px;
+  color: #fff;
+}
+
+#experience .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+#experience .card-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#experience .card-title-group i {
+  font-size: 1.8rem;
+  color: #0099ff;
+  font-weight: 900;
+}
+
+#experience .card-header p,
+#experience .card-text,
+#experience .location {
+  margin: 0;
+}
+
+#experience .card-header p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#experience .card-header span {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#experience .card-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: start;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#experience .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* About Section */
+#about {
+  padding: 90px 0;
+}
+
+.about-image {
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
+}
+
+#about p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Projects Section */
+#project {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0;
+  margin: 0;
+}
+
+#project h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#project .row {
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.project-title {
+  margin-bottom: 16px;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  min-height: 10px;
+  object-fit: cover;
+}
+
+#project button {
+  border-radius: 50px;
+  background-color: #ffffff69;
+  color: #fff;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  /* Hero Section */
+  #hero {
+    padding-top: 20px;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  #hero .detail {
+    align-items: center;
+    text-align: center;
+  }
+
+  #hero p,
+  .desc {
+    text-align: center;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  /* Experience Section */
+  #experience .card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #experience .card-header p {
+    font-size: 1.25rem;
+  }
+
+  #experience .card-header span {
+    font-size: 1rem;
+  }
+
+  /* About Section */
+  #about {
+    padding: 60px 0;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  /* Projects Section */
+  #project {
+    padding: 60px 0;
+  }
+
+  #project .row>[class*="col-"] {
+    width: 100%;
+  }
+
+  #project .row>[class*="col-"]+[class*="col-"] {
+    margin-top: 24px;
+  }
+
+  #project .project-image {
+    min-height: 10px;
+    max-height: 220px;
+  }
 }
